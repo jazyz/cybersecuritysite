@@ -1,0 +1,118 @@
+<!-- 
+Jonathan Zhao
+This is a website about digital privacy. The current page is the home page.
+November 28, 2021 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="nav sticky">
+      <a href="worksCited.html">Works Cited</a>
+      <div class="dropdown">
+        <button class="dropbtn">Learn More</button>
+        <div class="dropdown-content">
+          <a href="webBrowsing.html">Web Browsing</a>
+          <a href="dataSharing.html">Data Sharing</a>
+          <a href="cyberCrime.html">Cyber Crime</a>
+        </div>
+      </div>
+      <a href="index.html" class="active">Home</a>
+    </div>
+
+    <header>
+      <div class="header-content">
+        <div class="header-title">
+          <h1>Digital Privacy</h1>
+        </div>
+        <div class="typewriter">
+          <h1>Do you think you are safe?</h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="content">
+      <div class="margin-home">
+        <div class="column">
+          <img class="responsive" src="images/person.png" alt="person-image" />
+        </div>
+        <div class="column">
+          <h2 class="section-heading">What is Digital Privacy?</h2>
+          <p class="paragraph">
+            Privacy in the physical world is closing your bedroom curtains when
+            getting ready for bed, or locking your doors at night. This seems
+            like second nature to us, but in the digital space the idea of
+            privacy is skewed. We should have just as much privacy online as we
+            have in real life. We should be able to use the internet without
+            constant fear of being tracked.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content content-black">
+      <div class="margin-home">
+        <div class="column">
+          <h2 class="section-heading">Why Should we Care?</h2>
+          <p class="paragraph">
+            As our lives become more integrated with technology, the concern
+            about our online personal privacy is rising. Our data is being
+            collected unknowingly or without our consent. This is because our
+            personal data is extremely valuable on the internet. It is
+            collected, analyzed, and sold to people you don’t want knowing your
+            personal information. Just like how the police cannot search your
+            house without a warrant, your data should not be broadcast to the
+            world without your permission.
+          </p>
+        </div>
+        <div class="column">
+          <img
+            class="responsive"
+            src="images/question-mark.jpg"
+            alt="question-mark-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div id="poll" class="poll">
+        <h1>Quick Survey:</h1>
+        <h2>Are you worried about your digital privacy?</h2>
+        <form>
+          Yes:
+          <input
+            type="radio"
+            name="vote"
+            value="0"
+            onclick="displayText('yes')"
+          /><br />
+          No:
+          <input
+            type="radio"
+            name="vote"
+            value="1"
+            onclick="displayText('no')"
+          />
+        </form>
+        <h3 class="poll"></h3>
+      </div>
+    </section>
+  </body>
+</html>
